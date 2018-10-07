@@ -1,0 +1,121 @@
+html, body{
+    margin: 0;
+}
+
+
+
+
+.bar1 {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333333;
+}
+
+.bar{
+    float: left;
+}
+
+.bar, .bar2 {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    text-decoration: none;
+}
+
+
+.bar:hover {
+    background-color: #111111;
+}
+.bar2:hover{
+    background-color: #111111;
+}
+
+.definition {
+    padding-top: 30px;
+    margin-left: 350px;
+    margin-right: 350px;
+    font-size: large;
+}
+ 
+.imagedef {
+    margin-right: 0px;
+    padding: 0px;
+    padding-top: 50px;
+}
+
+.causes{
+    padding-top: 30px;
+    margin-left: 350px;
+    margin-right: 350px;
+    font-size: large;
+
+}
+
+.imagehaut {
+    display: block;
+    padding: 0px;
+    margin-left: auto;
+    margin-right: auto;
+  
+}
+
+.protection{
+    padding-top: 30px;
+    margin-left: 350px;
+    margin-right: 350px;
+    font-size: large;
+
+}
+
+.imageprotec {
+    padding: 0px;
+    padding-top: 50px
+}
+
+a { 
+    color:#000000; text-decoration:none;
+}
+
+a:hover {
+     color:#FF0000;text-decoration:underline;
+} 
+
+footer {
+    background-color: #333333;
+    font-style: oblique;
+    color: darkgrey;
+    bottom: 0px;
+    width: 100%;
+    
+}
+
+.injectionsql{
+    padding-top: 30px;
+    margin-left: 350px;
+    margin-right: 350px;
+    font-size: large;
+}
+.video {
+    text-align: center;
+    width:480px;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+h2 {
+    border-bottom: 2px solid #000000;
+ }
+
+
+ h1 {
+    padding-top: 50px;
+    color: black;
+    text-align: center;
+    border-bottom: 2px solid #000000;
+    margin-left: 350px;
+    margin-right: 350px;
+    font-size: 40px;
+}

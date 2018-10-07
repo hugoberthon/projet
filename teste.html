@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<!--déclare type html-->
+<html>
+
+<head>
+  <!--contient métadonnées + lien-->
+  <meta charset="UTF-8">
+  <meta http-equiv="Content-Type" />
+  <meta content="text/html" />
+  <meta name="author" content="nom" />
+  <meta name="description" content="desc" />
+  <meta name="key words" content="veille" />
+  <title>Les vulnérabilité informatique</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <header>
+    <img src="img/img3.jpg" class="imagehaut" />
+  </header>
+
+  <nav>
+    <ul class="bar1">
+
+      <li class="bar"><a href="#menu" class="bar2">Menu</a></li>
+      <li class="bar"><a href="#Actualité" class="bar2">Actualité</a></li>
+      <li class="bar"><a href="#vulnerabilite" class="bar2">Les vulnérabilités</a></li>
+      <li class="bar"><a href="#Autre" class="bar2">Autre</a></li>
+
+    </ul>
+  </nav>
+
+  <section>
+    <div class="definition">
+      <h2><img src="img/imgdef.jpg" style="float: right;" class="imagedef" /><a id="menu"></a>Définition</h2>
+      <p>
+        Dans le domaine de la sécurité informatique, une vulnérabilité ou faille est
+        une faiblesse dans un système informatique permettant à un attaquant de porter
+        atteinte à l'intégrité de ce système, c'est-à-dire à son fonctionnement normal,
+        à la confidentialité ou à l'intégrité des données qu'il contient.
+        <br><br>
+        Ces vulnérabilités sont la conséquence de faiblesses dans la conception,
+        la mise en œuvre ou l'utilisation d'un composant matériel ou logiciel du système,
+        mais il s'agit souvent d'anomalies logicielles liées à des erreurs de programmation ou
+        à de mauvaises pratiques. <br><br> Ces dysfonctionnements logiciels sont en général corrigés
+        à mesure de leurs découvertes, mais l'utilisateur reste exposé à une éventuelle
+        exploitation tant que le correctif (temporaire ou définitif) n'est pas publié et
+        installé. C'est pourquoi il est important de maintenir les logiciels à jour avec les
+        correctifs fournis par les éditeurs de logiciels. La procédure d'exploitation d'une
+        vulnérabilité logicielle est appelée exploit.</p>
+    </div>
+
+    <div class="causes">
+      <h2>Causes</h2>
+      <p>Les vulnérabilités informatiques proviennent
+        souvent de la négligence ou de l'inexpérience
+        d'un programmeur. Il peut y avoir d'autres causes liées au contexte comme l'évolution des technologies,
+        notamment en cryptographie. Une vulnérabilité permet généralement à l'attaquant de duper l'application,
+        par exemple en outrepassant les vérifications de contrôle d'accès ou en exécutant des commandes sur le
+        système hébergeant l'application.
+        <br>
+        <br>
+        Quelques vulnérabilités surviennent lorsque l'entrée d'un utilisateur n'est pas contrôlée,
+        permettant l'exécution de commandes ou de requêtes SQL (connues sous le nom d'injection SQL).
+        D'autres proviennent d'erreurs d'un programmeur lors de la vérification des buffers de données
+        (qui peuvent alors être dépassés), causant ainsi une corruption de la pile mémoire (et ainsi permettre
+        l'exécution de code fourni par l'attaquant).</p>
+    </div>
+
+    <div class="protection">
+      <h2><img src="img/protec.jpg" style="float: right;" class="imageprotec" />Comment se protéger</h2>
+      <p>Il n’existe malheureusement que peu de façons de se protéger devant des failles d’une telle nature, et seule
+        une excellente hygiène numérique est en mesure de limiter les risques.</p>
+      <ul>
+        <li>Changer régulièrement de mots de passe, d’identifiants et de codes divers</li>
+        <ul>
+          <li>Choisir un bon mot de passe par exemple des phrases longues ou des caractères spéciaux</li>
+        </ul>
+        <br>
+        <li>Il est recommandé d'avoir un mot de passe pour chaque réseau</li>
+        <br>
+        <li>Choisir un bon antivirus par exemple:</li>
+        <ul>
+          <li><a href="https://www.bitdefender.fr/" target="_blank">Bitdefender</a> </li>
+          <li><a href="https://www.kaspersky.fr/" target="_blank">Kaspersky</a> </li>
+        </ul>
+        <br>
+        <li>Garder son système à jour</li>
+      </ul>
+
+      <video width="600" height="422" controls="controls">
+        <source src="video/virusinfo.mp4" type="video/mp4" />
+      </video>
+    </div>
+
+    <h1><a id="vulnerabilite"></a>Exemples de vulnérabilités</h1>
+    <div class="injectionsql">
+      <h2>Les injections SQL</h2>
+      <p>Une injection SQL est un type d'exploitation d'une faille de sécurité d'une application interagissant avec une
+        base de données. L'attaquant détourne les requêtes en y injectant une chaîne non prévue par le développeur et
+        pouvant compromettre la sécurité du système.
+        <br><br>
+        C'est un cas particulier d'un type de vulnérabilité plus général qui peut se manifester lorsqu'un langage est
+        imbriqué dans un autre.
+        <br><br>
+        Lorsqu'on évoque l'injection SQL, on parle tout le temps de faille dans un site Web, mais il n'y a pas que les
+        sites qui sont touchés par cette faille: n'importe quelle application dialoguant avec une base de données en
+        utilisant des requêtes sur lesquelles l'utilisateur a une influence peut être vulnérable aux injections SQL.</p>
+
+      <p>Quand cette attaque réussit, elle peut avoir des conséquences désastreuses sur le site Web comme par exemple:
+      </p>
+
+      <ul>
+        <li>L'accès à un espace non autorisé via une fausse authentification</li>
+        <li>Suppression des données d'une manière frauduleuse</li>
+        <li>Vol de données confidentielles enregistrées dans la base de données</li>
+        <li>Destruction ou atteinte à l'intégrité de la base de données</li>
+      </ul>
+      <img src="img/sql.jpg" style="float: center;"/>
+      <p>Cliquer <a href="https://openclassrooms.com/fr/courses/2091901-protegez-vous-efficacement-contre-les-failles-web/2680180-linjection-sql">
+        ici </a> pour apprendre à ce protéger de cette attaque.</p>
+    </div>
+  </section>
+
+
+  <footer>
+    <p>Auteur : Hugo Berthon et Grégoire Unique</p>
+    <p>Tous droits réservés</p>
+    <p>Publié le 03/10/2018</p>
+  </footer>
+
+</body>
+
+</html>
