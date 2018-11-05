@@ -1,39 +1,43 @@
-<!DOCTYPE html>
-<!--déclare type html-->
+<!DOCTYPE <!DOCTYPE html>
 <html>
 
 <head>
-  <!--contient métadonnées + lien-->
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, height=device-height" />
   <meta charset="UTF-8">
   <meta http-equiv="Content-Type" />
   <meta content="text/html" />
   <meta name="author" content="nom" />
   <meta name="description" content="desc" />
   <meta name="key words" content="veille" />
-  <title>Les vulnérabilité informatique</title>
-  <link rel="stylesheet" href="css/style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" media="screen" href="css/style.css" />
+
+  <title>Les vulnérabilités informatique</title>
 </head>
 
 <body>
   <header>
-    <img src="img/img3.jpg" class="imagehaut" />
+    <div class="container">
+      <p><a id="hautdepage"></a>Les vulnérabilités informatique</p>
+      <nav>
+        <ul>
+          <li><a href="#menu">Menu</a></li>
+          <li><a href="#vulnerabilite">Les vulnérabilités</a></li>
+          <li><a href="#actualite">Actualité</a></li>
+          <li><a href="#autre">Autre</a></li>
+        </ul>
+      </nav>
+
+    </div>
+
   </header>
-
-  <nav>
-    <ul class="bar1">
-
-      <li class="bar"><a href="#menu" class="bar2">Menu</a></li>
-      <li class="bar"><a href="#Actualité" class="bar2">Actualité</a></li>
-      <li class="bar"><a href="#vulnerabilite" class="bar2">Les vulnérabilités</a></li>
-      <li class="bar"><a href="#Autre" class="bar2">Autre</a></li>
-
-    </ul>
-  </nav>
 
   <section>
     <div class="definition">
-      <h2><img src="img/imgdef.jpg" style="float: right;" class="imagedef" /><a id="menu"></a>Définition</h2>
-      <p>
+      <h2><a id="menu"></a>Définition</h2>
+
+      <p><img src="img/imgdef.jpg" style="float: center;" class="imagedef" />
         Dans le domaine de la sécurité informatique, une vulnérabilité ou faille est
         une faiblesse dans un système informatique permettant à un attaquant de porter
         atteinte à l'intégrité de ce système, c'est-à-dire à son fonctionnement normal,
@@ -47,7 +51,8 @@
         exploitation tant que le correctif (temporaire ou définitif) n'est pas publié et
         installé. C'est pourquoi il est important de maintenir les logiciels à jour avec les
         correctifs fournis par les éditeurs de logiciels. La procédure d'exploitation d'une
-        vulnérabilité logicielle est appelée exploit.</p>
+        vulnérabilité logicielle est appelée <a href="https://fr.wikipedia.org/wiki/Exploit_%28informatique%29"> exploit.</a></p>
+
     </div>
 
     <div class="causes">
@@ -68,7 +73,7 @@
     </div>
 
     <div class="protection">
-      <h2><img src="img/protec.jpg" style="float: right;" class="imageprotec" />Comment se protéger</h2>
+      <h2>Comment se protéger</h2>
       <p>Il n’existe malheureusement que peu de façons de se protéger devant des failles d’une telle nature, et seule
         une excellente hygiène numérique est en mesure de limiter les risques.</p>
       <ul>
@@ -88,7 +93,7 @@
         <li>Garder son système à jour</li>
       </ul>
 
-      <video width="600" height="422" controls="controls">
+      <video controls="controls">
         <source src="video/virusinfo.mp4" type="video/mp4" />
       </video>
     </div>
@@ -96,7 +101,9 @@
     <h1><a id="vulnerabilite"></a>Exemples de vulnérabilités</h1>
     <div class="injectionsql">
       <h2>Les injections SQL</h2>
-      <p>Une injection SQL est un type d'exploitation d'une faille de sécurité d'une application interagissant avec une
+      <h3>Introduction:</h3>
+      <p><img src="img/sql.jpg" class="sql" />Une injection SQL est un type d'exploitation d'une faille de sécurité
+        d'une application interagissant avec une
         base de données. L'attaquant détourne les requêtes en y injectant une chaîne non prévue par le développeur et
         pouvant compromettre la sécurité du système.
         <br><br>
@@ -106,7 +113,7 @@
         Lorsqu'on évoque l'injection SQL, on parle tout le temps de faille dans un site Web, mais il n'y a pas que les
         sites qui sont touchés par cette faille: n'importe quelle application dialoguant avec une base de données en
         utilisant des requêtes sur lesquelles l'utilisateur a une influence peut être vulnérable aux injections SQL.</p>
-
+      <h3>Les risques:</h3>
       <p>Quand cette attaque réussit, elle peut avoir des conséquences désastreuses sur le site Web comme par exemple:
       </p>
 
@@ -116,10 +123,146 @@
         <li>Vol de données confidentielles enregistrées dans la base de données</li>
         <li>Destruction ou atteinte à l'intégrité de la base de données</li>
       </ul>
-      <img src="img/sql.jpg" style="float: center;"/>
+
       <p>Cliquer <a href="https://openclassrooms.com/fr/courses/2091901-protegez-vous-efficacement-contre-les-failles-web/2680180-linjection-sql">
-        ici </a> pour apprendre à ce protéger de cette attaque.</p>
+          ici </a> pour apprendre à ce protéger de cette attaque.</p>
     </div>
+
+    <div class="xss">
+
+      <h2>Vulnérabilité de type Cross Site Scripting (XSS)</h2>
+
+      <h3>Introduction:</h3>
+      <p><img src="img/xss.jpg" class="xssimage" />Une vulnérabilité de type Cross Site Scripting, injection de code
+        indirecte en français, est exploitable sur
+        les serveurs web ou sur les applications web qui publient du texte fourni par le visiteur sans l’avoir filtré.
+        Un utilisateur malintentionné peut, en utilisant cette vulnérabilité, insérer du code dans une page HTML
+        renvoyée dynamiquement par le serveur.
+        <br><br>
+        Ce code est généralement écrit dans un langage de script (par exemple
+        JavaScript ou VBscript) qui est interprété par le navigateur de la victime.
+        <br><br>
+        Le terme anglais Cross Site Scripting est abrégé en XSS car l’acronyme CSS est déjà utilisé dans le monde du
+        web pour Cascading Style Sheet.</p>
+      <br><br>
+
+      <h3>Les risques:</h3>
+      <p>L'exploitation d'une faille de type XSS permettrait à un intrus de réaliser les opérations suivantes :</p>
+      <ul>
+        <li>Redirection (parfois de manière transparente) de l'utilisateur (souvent dans un but d'hameçonnage)</li>
+        <li>Vol d'informations, par exemple sessions et cookies.</li>
+        <li>Actions sur le site faillible, à l'insu de la victime et sous son identité (envoi de messages, suppression
+          de données…)</li>
+        <li>Rendre la lecture d'une page difficile (boucle infinie d'alertes par exemple).</li>
+      </ul>
+      <br>
+
+      <h3>Protection contre les XSS:</h3>
+      <p>Plusieurs techniques permettent d'éviter le XSS :</p>
+      <ul>
+        <li>Retraiter systématiquement le code HTML produit par l'application avant l'envoi au navigateur ;</li>
+        <li>Filtrer les variables affichées ou enregistrées avec des caractères '<' et '>' (en CGI comme en PHP). De
+            façon plus générale, donner des noms préfixés (avec par exemple le préfixe "us" pour user string) aux
+            variables contenant des chaines venant de l'extérieur pour les distinguer des autres, et ne jamais utiliser
+            aucune des valeurs correspondantes dans une chaîne exécutable (en particulier une chaîne SQL, qui peut
+            aussi être ciblée par une injection SQL d'autant plus dangereuse) sans filtrage préalable.</li> <br>
+        <li>En PHP :</li>
+        <ul>
+          <li>utiliser la fonction htmlspecialchars()​ qui filtre les '<' et '>' (cf. ci-dessus) ;</li> <li>utiliser la
+              fonction htmlentities()​ qui est identique à htmlspecialchars()​ sauf qu'elle filtre tous les caractères
+              équivalents au codage HTML ou JavaScript.</li>
+          <li>utiliser strip_tags()​ qui supprime les balises.</li>
+        </ul>
+        <br>
+        <li>En ColdFusion :</li>
+        <ul>
+          <li>utiliser la fonction HTMLEditFormat() qui remplace tous les caractères spéciaux du langage HTML par leur
+            référence d'entité</li>
+          <li>définir l'attribut scriptProtect du tag <cfapplication> pour protéger automatiquement toutes les
+              variables (form et/ou url et/ou cgi et/ou cookies) d'un site</li>
+          <li>activer au niveau du serveur une protection globale (form, url, cgi et cookies) par défaut de toutes les
+            applications en cochant la case "Enable Global Script Protection" du ColdFusion Administrator</li>
+        </ul>
+      </ul>
+      <br>
+      <p>Il existe des bibliothèques qui permettent de filtrer efficacement du contenu balisé issu de l'utilisateur
+        (systèmes de publication).
+        <br>
+        Par ailleurs, il est également possible de se protéger des failles de type XSS à l'aide d'équipements réseaux
+        dédiés tels que les pare-feux applicatifs. Ces derniers permettent de filtrer l'ensemble des flux HTTP afin de
+        détecter les requêtes suspectes.</p>
+
+    </div>
+
+    <div class="tampon">
+
+      <h2>Dépassement de tampon</h2>
+
+      <h3>Introduction:</h3>
+      <p>En informatique, un dépassement de tampon ou débordement de tampon (en anglais, buffer overflow) est un bug
+        par lequel un processus, lors de l'écriture dans un tampon, écrit à l'extérieur de l'espace alloué au tampon,
+        écrasant ainsi des informations nécessaires au processus.
+        <br>
+        Lorsque le bug se produit, le comportement de l'ordinateur devient imprévisible. Il en résulte souvent un
+        blocage du programme, voire de tout le système.
+        <br>
+        Le bug peut aussi être provoqué intentionnellement et être exploité pour violer la politique de sécurité d’un
+        système. Cette technique est couramment utilisée par les pirates. La stratégie de l'attaquant est alors de
+        détourner le programme bugué en lui faisant exécuter des instructions qu'il a introduites dans le processus.</p>
+      <br>
+
+      <h3>Utilisation malveillante et contre-mesures:</h3>
+      <p>Une vulnérabilité de ce type permet d'écrire des données au delà du tampon qui leur est alloué. Avec le
+        langage C, cela peut typiquement se produire lorsque des fonctions telles que gets (lecture d'une suite de
+        caractères sur le flux d'entrée standard) ou strcpy (copie d'une chaîne de caractères), qui ne contrôlent pas
+        le nombre de caractères écrits en mémoire, sont appelées sur des entrées non fiables. Il devient alors possible
+        pour l'attaquant de modifier les variables situées à la suite du tampon.</p>
+      <br>
+
+      <h3>Attaques génériques:</h3>
+      <p>Sur la plupart des architectures de processeurs, l'adresse de retour d'une fonction est stockée dans la pile
+        d'exécution. Lorsqu'un dépassement se produit sur un tampon situé dans la pile d'exécution, il est alors
+        possible d'écraser l'adresse de retour de la fonction en cours d'exécution. L'attaquant peut ainsi contrôler le
+        pointeur d'instruction après le retour de la fonction, et lui faire exécuter des instructions arbitraires, par
+        exemple un code malveillant qu'il aura introduit dans le programme.
+        Attaques spécifiques</p>
+      <br>
+
+      <h3>Attaques spécifiques:</h3>
+      <p>Des vulnérabilités de dépassement de tampons peuvent exister dans des programmes dans lesquels l'adresse de
+        retour est protégée (par exemple par le Stack-Smashing Protector), ou exister ailleurs que la pile d'exécution.
+        Dans certains cas, elles peuvent tout de même être exploitées pour mettre à mal la sécurité du programme, par
+        exemple en écrasant d'autres pointeurs que le pointeur d'instruction, ou en modifiant des données spécifiques
+        du programme pour en altérer la logique.</p>
+      <br>
+
+      <h3>Contremesures:</h3>
+      <p>Afin d’éviter ces dépassements, certaines fonctions ont été réécrites pour prendre en paramètre la taille du
+        tampon dans lequel les données sont copiées, et éviter ainsi de copier des informations à l'extérieur du
+        tampon. Ainsi strlcpy est une version de strcpy qui tient compte de la taille du tampon. De même, fgets est une
+        version de gets prenant en compte la taille du tampon1. Les fonctions strlcpy et strlcat ont été initialement
+        disponibles sous OpenBSD et elles tendent à se répandre dans divers logiciels comme rsync et KDE.</p>
+    </div>
+
+
+      
+      <h1><a id="actualite"></a>Actualité</h1>
+      <div class="actu">
+      <ul>
+          <li><p>La FIFA et l'UEFA longtemps questionner sur des sujets dans des document confidentiels
+	               Les fuite de 2015 on entrainer de nombreuse poursuite contre des stars du football (Cristiano Ronaldo et José Mourinho)
+	               En 2017 se serait des pirate du kremelin qui les aurait attaquer 
+	               </br><a href="https://www.zdnet.fr/actualites/la-fifa-admet-avoir-subi-une-nouvelle-attaque-sur-ses-donnees-39875931.htm" target="_blank">Source ZDNET</a> </li>
+	  
+          <li><p>Vulnérabilité dans Wallix AdminBastion
+                 </br><a href="https://www.cert.ssi.gouv.fr/" target="_blank">Source CERT-FR</a> </li>
+          
+          <li><p>Sécurité informatique : 26 % des entreprises manquent de temps pour appliquer les correctifs en  matière de securité
+                 </br><a href="https://www.developpez.com/actu/203237/Securite-informatique-26-pourcent-des-entreprises-manquent-de-temps-pour-appliquer-les-correctifs-selon-une-enquete-realisee-par-Outpost24/" target="_blank">Source Developpez.com</a> </li>
+
+      </ul>
+      </div>
+      
   </section>
 
 
@@ -127,6 +270,8 @@
     <p>Auteur : Hugo Berthon et Grégoire Unique</p>
     <p>Tous droits réservés</p>
     <p>Publié le 03/10/2018</p>
+    <p><a href="#hautdepage">Retour en haut du site</a></p>
+    <br>
   </footer>
 
 </body>

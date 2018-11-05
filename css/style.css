@@ -1,121 +1,630 @@
-html, body{
-    margin: 0;
-}
-
-
-
-
-.bar1 {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #333333;
-}
-
-.bar{
-    float: left;
-}
-
-.bar, .bar2 {
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 10px;
-    text-decoration: none;
-}
-
-
-.bar:hover {
-    background-color: #111111;
-}
-.bar2:hover{
-    background-color: #111111;
-}
-
-.definition {
-    padding-top: 30px;
-    margin-left: 350px;
-    margin-right: 350px;
-    font-size: large;
-}
- 
-.imagedef {
-    margin-right: 0px;
-    padding: 0px;
-    padding-top: 50px;
-}
-
-.causes{
-    padding-top: 30px;
-    margin-left: 350px;
-    margin-right: 350px;
-    font-size: large;
-
-}
-
-.imagehaut {
-    display: block;
-    padding: 0px;
-    margin-left: auto;
-    margin-right: auto;
-  
-}
-
-.protection{
-    padding-top: 30px;
-    margin-left: 350px;
-    margin-right: 350px;
-    font-size: large;
-
-}
-
-.imageprotec {
-    padding: 0px;
-    padding-top: 50px
-}
-
-a { 
-    color:#000000; text-decoration:none;
-}
-
-a:hover {
-     color:#FF0000;text-decoration:underline;
-} 
-
-footer {
-    background-color: #333333;
-    font-style: oblique;
-    color: darkgrey;
-    bottom: 0px;
-    width: 100%;
+@media screen and (max-width: 2000px)
+{
     
-}
 
-.injectionsql{
-    padding-top: 30px;
-    margin-left: 350px;
-    margin-right: 350px;
-    font-size: large;
-}
-.video {
-    text-align: center;
-    width:480px;
-    margin-left:auto;
-    margin-right:auto;
-}
-
-h2 {
-    border-bottom: 2px solid #000000;
- }
+    body {
+        margin: 0;
+        background: #222;
+        font-weight: 300;
+        font-family: 'Montserrat', sans-serif;
+        color: white;
+        
+    }
 
 
- h1 {
-    padding-top: 50px;
-    color: black;
-    text-align: center;
-    border-bottom: 2px solid #000000;
-    margin-left: 350px;
-    margin-right: 350px;
-    font-size: 40px;
+    .container {
+        width: 100%;
+        margin: 0 auto;
+        background: #55d6aa;
+    }
+
+    .container p {
+        float: left;
+        font-size: 20px;
+        margin-left: 20px;
+        color: black;
+        
+    }
+
+    header {
+        background: #55d6aa;
+    }
+
+    header::after {
+        content: '';
+        display: table;
+        clear: both;
+    }
+
+    nav {
+        float: right;
+        padding-right: 20px;
+    }
+
+    nav ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+
+    nav li {
+        display: inline-block;
+        margin-left: 70px;
+        padding-top: 23px;
+        position: relative;
+    }
+
+    nav a {
+        color: #444;
+        text-decoration: none;
+        text-transform: uppercase;
+    }
+
+    nav a:hover {
+        color: #000;
+    }
+
+    nav a::before {
+        content: '';
+        display: block;
+        height: 5px;
+        width: 100%;
+        background-color: #444;
+        position: absolute;
+        top: 0;
+        width: 0%;
+        transition: all ease-in-out 250ms;
+    }
+
+    nav a:hover::before {
+        width: 100%;
+    }
+
+
+    .definition {
+        padding-top: 10px;
+        text-align: left;
+        font-size: large;
+        margin-left: 350px;
+        margin-right: 350px;
+        margin-top: 20px;
+    }
+    
+    .imagedef {
+        float: right;
+    }
+    
+    .causes{
+        padding-top: 30px;
+        text-align: left;
+        font-size: large;
+        margin-left: 350px;
+        margin-right: 350px;
+    }
+
+
+    .protection{
+        padding-top: 30px;
+        text-align: left;
+        font-size: large;
+        margin-left: 350px;
+        margin-right: 350px;
+    }
+
+
+    a { 
+        color: #55d6aa; text-decoration:none;
+    }
+
+    a:hover {
+        color:#FF0000;text-decoration:underline;
+    } 
+
+    footer {
+        background-color: #333333;
+        font-style: oblique;
+        color: #000;
+        bottom: 0px;
+        width: 100%;
+        background: #55d6aa; 
+    }
+
+    .injectionsql{
+        padding-top: 30px;
+        text-align: left;
+        font-size: large;
+        margin-left: 350px;
+        margin-right: 350px;
+    }
+
+    .sql {
+        float: right;
+        
+    }
+
+    video {
+        text-align: center;
+        width: 650px;
+        height: 350px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    h2 {
+        border-bottom: 2px solid #55d6aa;
+    }
+
+
+    h1 {
+        padding-top: 50px;
+        color: white;
+        text-align: center;
+        border-bottom: 2px solid #55d6aa;
+        font-size: 40px;
+    }
+
+    footer p a {
+        float: right;
+        color: #000;
+        margin-right: 10px;
+    }
+
+    .xss {
+        padding-top: 30px;
+        text-align: left;
+        font-size: large;
+        margin-left: 350px;
+        margin-right: 350px;
+    }
+
+    .xssimage {
+        float: right;
+    }
+
+    .tampon {
+        padding-top: 30px;
+        text-align: left;
+        font-size: large;
+        margin-left: 350px;
+        margin-right: 350px;
+    }
+
+    .actu {  
+        margin-top: 10px;
+        text-align: left;
+        font-size: large;
+        margin-left: 350px;
+        margin-right: 350px;
+    }
+
+
 }
+
+
+
+
+
+@media screen and (max-width: 1000px) {
+
+    
+
+    body {
+        margin: 0;
+        background: #222;
+        font-weight: 300;
+        font-family: 'Montserrat', sans-serif;
+        color: white;
+        
+    }
+    
+    
+    .container {
+        width: 100%;
+        margin: 0 auto;
+        
+        background: #55d6aa;
+    }
+    
+    .container p {
+        float: left;
+        font-size: 20px;
+        margin-left: 20px;
+        color: black;
+        
+    }
+    
+    header {
+        background: #55d6aa;
+    }
+    
+    header::after {
+        content: '';
+        display: table;
+        clear: both;
+    }
+    
+    nav {
+        float: right;
+        padding-right: 20px;
+    }
+    
+    nav ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+    
+    nav li {
+        display: inline-block;
+        margin-left: 70px;
+        padding-top: 23px;
+        position: relative;
+    }
+    
+    nav a {
+        color: #444;
+        text-decoration: none;
+        text-transform: uppercase;
+    }
+    
+    nav a:hover {
+        color: #000;
+    }
+    
+    nav a::before {
+        content: '';
+        display: block;
+        height: 5px;
+        width: 100%;
+        background-color: #444;
+        position: absolute;
+        top: 0;
+        width: 0%;
+        transition: all ease-in-out 250ms;
+    }
+    
+    nav a:hover::before {
+        width: 100%;
+    }
+    
+    
+    .definition {
+        padding-top: 10px;
+        text-align: center;
+        font-size: large;
+        margin-left:auto;
+        margin-right:auto;
+        margin-top: 20px;
+    }
+     
+    .imagedef {
+        padding-top: 5px;
+        float: center;
+    }
+    
+    .causes{
+        padding-top: 30px;
+        text-align: center;
+        font-size: large;
+        margin-left:auto;
+        margin-right:auto;
+    }
+    
+    
+    .protection{
+        padding-top: 30px;
+        text-align: center;
+        font-size: large;
+        margin-left:auto;
+        margin-right:auto;
+    }
+    
+    
+    a { 
+        color: #55d6aa; text-decoration:none;
+    }
+    
+    a:hover {
+         color:#FF0000;text-decoration:underline;
+    } 
+    
+    footer {
+        background-color: #333333;
+        font-style: oblique;
+        color: #000;
+        bottom: 0px;
+        width: 100%;
+        background: #55d6aa; 
+    }
+    
+    .injectionsql{
+        padding-top: 30px;
+        text-align: center;
+        font-size: large;
+        margin-left:auto;
+        margin-right:auto;
+    }
+
+    .sql {
+        float: center;
+    }
+
+    video {
+        text-align: center;
+        width: 300px;
+        height: 150px;
+        margin-left:auto;
+        margin-right:auto;
+    }
+    
+    h2 {
+        border-bottom: 2px solid #55d6aa;
+     }
+    
+    
+     h1 {
+        padding-top: 50px;
+        color: white;
+        text-align: center;
+        border-bottom: 2px solid #55d6aa;
+        text-align: center;
+        font-size: 40px;
+    }
+    
+    footer p a {
+        float: right;
+        color: #000;
+        margin-right: 10px;
+    }
+    
+    .xss {
+        margin-top: 50px;
+        text-align: center;
+        margin-left:auto;
+        margin-right:auto;
+    }
+
+    .xssimage {
+        float: center;
+    }
+    
+    .tampon {
+        margin-top: 50px;
+        text-align: center;
+        margin-left:auto;
+        margin-right:auto;
+    }
+
+    img {
+        width: 300px;
+        height: 200px;
+    }
+
+    .actu {
+        margin-top: 10px;
+        text-align: left;
+        font-size: large;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+
+}
+
+
+
+
+
+
+@media all and (max-width: 600px)
+
+{ 
+    
+
+    body {
+        margin: 0;
+        background: #222;
+        font-weight: 300;
+        font-family: 'Montserrat', sans-serif;
+        color: white;
+    }
+    
+    
+    .container {
+        width: 100%;
+        margin: 0 auto;
+        
+        background: #55d6aa;
+    }
+    
+    .container p {
+        float: left;
+        font-size: 20px;
+        margin-left: 20px;
+        color: black;
+        
+    }
+    
+    header {
+        background: #55d6aa;
+    }
+    
+    header::after {
+        content: '';
+        display: table;
+        clear: both;
+    }
+    
+    nav {
+        float: right;
+        padding-right: 20px;
+    }
+    
+    nav ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+    
+    nav li {
+        display: inline-block;
+        margin-left: 70px;
+        padding-top: 23px;
+        position: relative;
+    }
+    
+    nav a {
+        color: #444;
+        text-decoration: none;
+        text-transform: uppercase;
+    }
+    
+    nav a:hover {
+        color: #000;
+    }
+    
+    nav a::before {
+        content: '';
+        display: block;
+        height: 5px;
+        width: 100%;
+        background-color: #444;
+        position: absolute;
+        top: 0;
+        width: 0%;
+        transition: all ease-in-out 250ms;
+    }
+    
+    nav a:hover::before {
+        width: 100%;
+    }
+    
+    
+    .definition {
+        padding-top: 10px;
+        text-align: center;
+        font-size: large;
+        margin-left:auto;
+        margin-right:auto;
+        margin-top: 20px;
+    }
+     
+    .imagedef {
+        padding-top: 5px;
+        float: center;
+    }
+    
+    .causes{
+        padding-top: 30px;
+        text-align: center;
+        font-size: large;
+        margin-left:auto;
+        margin-right:auto;
+    }
+    
+    
+    .protection{
+        padding-top: 30px;
+        text-align: center;
+        font-size: large;
+        margin-left:auto;
+        margin-right:auto;
+    }
+    
+    
+    a { 
+        color: #55d6aa; text-decoration:none;
+    }
+    
+    a:hover {
+         color:#FF0000;text-decoration:underline;
+    } 
+    
+    footer {
+        background-color: #333333;
+        font-style: oblique;
+        color: #000;
+        bottom: 0px;
+        width: 100%;
+        background: #55d6aa; 
+    }
+    
+    .injectionsql{
+        padding-top: 30px;
+        text-align: center;
+        font-size: large;
+        margin-left:auto;
+        margin-right:auto;
+    }
+
+    .sql {
+        float: center;
+    }
+
+    video {
+        text-align: center;
+        width: 300px;
+        height: 150px;
+        margin-left:auto;
+        margin-right:auto;
+    }
+    
+    h2 {
+        border-bottom: 2px solid #55d6aa;
+     }
+    
+    
+     h1 {
+        padding-top: 50px;
+        color: white;
+        text-align: center;
+        border-bottom: 2px solid #55d6aa;
+        text-align: center;
+        font-size: 40px;
+    }
+    
+    footer p a {
+        float: right;
+        color: #000;
+        margin-right: 10px;
+    }
+    
+    .xss {
+        margin-top: 50px;
+        text-align: center;
+        margin-left:auto;
+        margin-right:auto;
+    }
+
+    .xssimage {
+        float: center;
+    }
+    
+    .tampon {
+        margin-top: 50px;
+        text-align: center;
+        margin-left:auto;
+        margin-right:auto;
+    }
+    
+    img {
+        width: 300px;
+        height: 200px;
+        float: left;
+    }
+
+    .actu {
+        margin-top: 10px;
+        text-align: left;
+        font-size: large;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+}
+
+
+
+
+
+
