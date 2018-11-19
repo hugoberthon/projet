@@ -25,6 +25,16 @@
         color: black;
         
     }
+   
+    .menudroite {position: fixed;
+        width: 175px;
+        right: 0;
+        top: 200px;
+        min-height:150px;
+        
+        background: #FFFFFF0;
+       
+       }
 
     header {
         background: #55d6aa;
@@ -196,8 +206,6 @@
         margin-left: 350px;
         margin-right: 350px;
     }
-
-
 }
 
 
@@ -620,11 +628,18 @@
         margin-left: auto;
         margin-right: auto;
     }
+    .outilswindows{
+        padding-top: 30px;
+        text-align: left;
+        font-size: large;
+        margin-left: 350px;
+        margin-right: 350px;
+    }
+    }
 
-}
 
+    @media (min-width: 651px) {
+        .menudroite
+        visibility:hidden;
 
-
-
-
-
+    }
