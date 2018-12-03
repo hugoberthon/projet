@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+  <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE6" />
+  <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7" />
+  <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE8" />
+  <meta charset="UTF-8">
+  <meta http-equiv="Content-Type" />
+  <meta content="text/html" />
+  <meta name="author" content="nom" />
+  <meta name="description" content="desc" />
+  <meta name="key words" content="veille" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+
+
+  <link rel="stylesheet" type="text/css" media="screen" href="css/style.css" />
+
+  <title>Les vulnérabilités informatique</title>
+<script>if ( window.addEventListener ) {
+var kkeys = [], konami = "38,38,40,40,37,39,37,39,66,65";
+window.addEventListener("keydown", function(e){
+kkeys.push( e.keyCode );
+if ( kkeys.toString().indexOf( konami ) >= 0 ) {
+alert('nous attendons la note :)');
+window.location = "http://www.ste-marguerite.net/fr";
+}
+}, true);
+}
+</script>
+</head>
+
+<body>
+
+  <header>
+    <nav class="navbar navbar-expand-sm bg-primary navbar-dark">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="introduction.html">Les vulnérabilités informatique</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="vulnerabilite.html">Les vulnérabilités</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="actualite.html">Actualités</a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="autre.html">Autres</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+
+  <section>
+
+
+    <div class="metasploit">
+      <h1>Metasploit Pen Testing Tool</h1>
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-sm-12"><img src="img/metasploit.jpg" class="imgmetasploit">Metasploit, Metasploit Pen Testing
+            Tool, est un projet open source
+            en relation avec la sécurité des systèmes informatiques. Son but est de fournir des informations
+            sur les vulnérabilités de systèmes informatiques, d'aider à la pénétration et au développement
+            de signatures pour les IDS (Système de détection d'intrusion).<br><br>
+
+            Le plus connu des sous-projets est le Metasploit Framework, un outil pour le développement et
+            l'exécution d'exploits (logiciels permettant d'exploiter à son profit une vulnérabilité)
+            contre une machine distante. Les autres sous-projets importants sont la base de données
+            d'Opcode, l'archive de shellcode, et la recherche dans la sécurité.<br><br>
+
+            Créé à l'origine en langage de programmation Perl, Metasploit Framework a été complètement
+            ré-écrit en langage Ruby. C'est un outil très puissant pour les
+            chercheurs en sécurité travaillant sur les potentielles vulnérabilités de systèmes informatiques.<br><br>
+
+            Comparable aux produits commerciaux tels que Immunity's CANVAS ou Core Impact, Metasploit
+            peut être utilisé par les administrateurs pour tester la vulnérabilité des systèmes informatiques
+            afin de les protéger, ou par les pirates et les script kiddies (néophytes dépourvus des principales
+            compétences en matière de gestion de la sécurité informatique) à des fins de piratage. Comme
+            la plupart des outils de sécurité informatique, Metasploit peut être utilisé à la fois de
+            manière légale (White hat) et à la fois pour des activités illégales (Black hat).</div>
+          <div class="col-md-12"><img src="img/msfinterface.png" class="imginterface"></imgsrc>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="terme">
+      <h1>Les termes que l'on retrouve fréquemment dans Metasploit:</h1>
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-sm-12">
+            <ul>
+              <li><u>Exploit</u> : Un exploit dans le domaine de la sécurité informatique est un élément de
+                programme permettant à un individu ou à un logiciel malveillant d'exploiter une faille de
+                sécurité informatique dans un système informatique. Permettant ainsi une élévation de privilèges.
+                Celui-ci nécessite un payload pour son foctionnement</li><br><br>
+
+              <li><u>Payloads</u> : Les payloads sont les codes exécutables à distance, c’est la charge active
+                qui s’exécutera si tout se passe bien. Il s’agit d’un shell, d’un reverse TCP ou HTTP, etc…</li><br><br>
+
+              <li><u>Auxiliary</u> : C'est pareil qu'un exploit mais qui ne nécessite pas un payload pour son
+                fonctionnement
+                (Je ne suis pas sûr)</li><br><br>
+
+              <li><u>Nops</u> : Les nops permettent de garder une payload à une taille fixe, en effet, si nous
+                prenons
+                l’exemple
+                de l’exploitation d’un Buffer Overflow, le payload doit souvent avoir une taille bien spécifique en
+                octets
+                (ni plus ni moins). Ainsi, si le payload initial se retrouve plus petit, on va le « bourrer » (notion
+                de «
+                padding »)
+                avec des nops pour atteindre la taille souhaitée.</li><br><br>
+
+              <li><u>Post</u> : Ce sont les modules de post exploitation, c’est-à-dire qu’ils servent à effectuer une
+                action
+                sur une cible
+                compromise (espionnage, collecte d’informations, etc…).</li><br><br>
+
+              <li><u>Encoders</u> : Ils permettent d’effectuer des actions de dissimulation sur un payload
+                (notamment car les antivirus connaissent parfaitement les signatures des payloads Metasploit)</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+
+
+    <div class="jumbotron">
+      <div class="outil">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-sm-4">
+              <h1>Les outils de detection sur Windows</h1>
+              <ul>
+                <li>Anti-rootkit </li>
+                <li>RkU </li>
+                <li>IceSword</li>
+                <li>RootkitRevealer de Sysinternals </li>
+                <li>Blacklight de F-Secure</li>
+                <li> Rootkit Hook Analyzer</li>
+                <li>RootAnalyser</li>
+                <li>HijackThis</li>
+                <li>GMER </li>
+                <li>DarkSpy</li>
+                <li> Trend Micro Rootkit Buster2</li>
+              </ul>
+            </div>
+
+
+            <div class="col-sm-4">
+              <h1>Les outils de detection sur Linux</h1>
+              <ul>
+                <li>chkrootkit</li>
+                <li>rkhunter </li>
+                <li>Zeppoo </li>
+                <li>unhide</li>
+              </ul>
+            </div>
+
+            <div class="col-sm-4">
+              <h1>Antivirus</h1>
+              <ul>
+                <li>Ad-Aware</li>
+                <li>AdwCleaner</li>
+                <li>Malwarebytes Anti-Exploit</li>
+                <li>Malwarebytes Anti-Malware</li>
+                <li>Spybot S&D </li>
+                <li>SpywareBlaster</li>
+                <li>SpywareGuard</li>
+                <li>Windows Defender</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  </section>
+  <footer>
+    <p>Auteur : Hugo Berthon et Grégoire Unique</p>
+    <p>Tous droits réservés</p>
+    <p>Publié le 03/10/2018</p>
+    <br>
+  </footer>
+
+</body>
+
+</html>
